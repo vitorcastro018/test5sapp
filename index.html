@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vitor Castro">
+    <meta name="description" content="Avalie seu nível de 5S">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Avalie seu 5S - ADM Cursos e Treinamentos</title>
+</head>
+<body>
+    <header>
+        <img width="120px" src="./imagens/logo_adm_png.png">
+
+    </header>
+    
+    <section>
+        <div id="conteudo_1">
+            <h1>Avalie seu nível 5S</h1>
+
+            <h2>Escolha sim ou não para as perguntas a seguir:</h2>
+
+            
+            <!-- Primeira Pergunta -->
+            <p class="perguntas">Existem objetos e recursos sem serventia na sua área de trabalho?
+                <br>
+                    
+                <label for="afirmar_1" >Sim</label>
+                <input id="afirmar_1" type="radio" name="pergunta_1">
+
+                <label for="discordar_1" >Não</label>
+                <input type="radio" id="discordar_1" name="pergunta_1">
+
+            </p>
+
+            <!-- Segunda Pergunta -->
+            <p>Existe desperdício observável, de qualquer espécie, em sua área de trabalho?
+                <br>
+
+                <label for="afirmar_2" >Sim</label>
+                <input id="afirmar_2" type="radio" name="pergunta_2">
+
+                <label for="discordar_2" >Não</label>
+                <input type="radio" id="discordar_2" name="pergunta_2">
+
+            </p>
+
+            <!-- Terceira Pergunta -->
+            <p>Existem objetos de uso pessoal na sua área de trabalho?
+                <br>
+
+                <label for="afirmar_3" >Sim</label>
+                <input id="afirmar_3" type="radio" name="pergunta_3">
+
+                <label for="discordar_3" >Não</label>
+                <input type="radio" id="discordar_3" name="pergunta_3">
+
+            </p>
+
+            <!-- Quarta pergunta -->
+            <p>O local está arrumado, mantendo um lugar para cada item. Cada coisa em seu lugar?
+                <br>
+
+                <label for="afirmar_4">Sim</label>
+                <input id="afirmar_4" type="radio" name="pergunta_4">
+
+                <label for="discordar_4" >Não</label>
+                <input type="radio" id="discordar_4" name="pergunta_4">
+            </p>
+
+            <!-- Quinta Pergunta -->
+            <p>A identificação e disposição dos equipamentos, objetos, quadros de avisos e gestão a visita, utensílios, armários, arquivos e prateleiras de seu posto de trabalho está adequada as necessidades funcionais?
+                <br>
+
+                <label for="afirmar_5" >Sim</label>
+                <input id="afirmar_5" type="radio" name="pergunta_5">
+
+                <label for="discordar_5">Não</label>
+                <input type="radio" id="discordar_5" name="pergunta_5">
+            </p>
+            <!-- Sexta pergunta -->
+            <p>O estado das paredes, tetos, pisos, e tubulações de sua área está conservado. Não apresentam manchas nem falhas? Visualmente sua área de trabalho está limpa, não havendo poeira ou sujeira de qualquer espécie?
+                <br>
+
+                <label for="afirmar_6">Sim</label>
+                <input id="afirmar_6" type="radio" name="pergunta_6">
+
+                <label for="discordar_6">Não</label>
+                <input type="radio" id="discordar_6" name="pergunta_6">
+            </p>
+            <!-- Sétima Pergunta -->
+            <p>Os recursos (equipamentos, utensílios, maquinas, ferramentas, aparelhos e mobiliários) existentes estão conservados, limpos, sem qualquer tipo de sujeira?
+                <br>
+
+                <label for="afirmar_7">Sim</label>
+                <input id="afirmar_7" type="radio" name="pergunta_7">
+
+                <label for="discordar_7">Não</label>
+                <input type="radio" id="discordar_7" name="pergunta_7">
+                
+            </p>
+            <!-- Oitava Pergunta -->
+            <p>Existe uma sistemática de limpeza estabelecida para sua área de trabalho?
+                <br>
+
+                <label for="afirmar_8">Sim</label>
+                <input id="afirmar_8" type="radio" name="pergunta_8">
+
+                <label for="discordar_8">Não</label>
+                <input type="radio" id="discordar_8" name="pergunta_8">
+
+            </p>
+            <!-- Nona Pergunta -->
+            <p>Sua condição de asseio e higiene pessoal está adequada: uniforme limpo, crachá de identificação, cabelo, barba, etc?
+                <br>
+
+                <label for="afirmar_9">Sim</label>
+                <input id="afirmar_9" type="radio" name="pergunta_9">
+
+                <label for="discordar_9">Não</label>
+                <input type="radio" id="discordar_9" name="pergunta_9">
+            </p>
+            <!-- Décima pergunta -->
+            <p>Os requisitos de segurança estão adequados? As instalações prediais (elétricas, hidráulicas, telefônicas, gás, etc.) do local estão em perfeito estado de funcionamento, atendendo aos requisitos de segurança?
+                <br>
+
+                <label for="afirmar_10">Sim</label>
+                <input id="afirmar_10" type="radio" name="pergunta_10">
+
+                <label for="discordar_10">Não</label>
+                <input type="radio" id="discordar_10" name="pergunta_10">
+            </p>
+            
+            <!-- Botão de cálculo de resultado -->
+
+            <button onclick="calcular_resultado()" id="show_result">Ver resultado</button>
+        
+        </div>
+        <div id="final">
+            <h3 id='texto'>Clique no botão a cima para ver o resultado do teste</h3>
+        </div>
+
+        <div id="formulario">
+            <form action="https://formsubmit.co/tiaggo.go@gmail.com" method="POST">
+                <h5>Clique no botão abaixo para enviar seu resultado para o professor avaliar:</h5>
+                <label class="etiqueta" for="campo_nome">Seu nome</label>
+                <input name="Nome_do_entrevistado" contenteditable="false" class="campos" type="text" id="campo_nome">
+
+                <label class="etiqueta" for="campo_resultado">Seu resultado</label>
+                <input name="Resultado_final" contenteditable="false" class="campos" id="campo_resultado" type="text">
+
+                <button id="btn_enviar" type="submit">Enviar resultado</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
